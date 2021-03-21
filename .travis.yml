@@ -12,7 +12,7 @@ script:
 deploy:
  provider: azure_web_apps
  username: $React_User
- password: $Ract_Password
+ password: $React_Password
  site: docker-react609162
  on:
   branch: main
