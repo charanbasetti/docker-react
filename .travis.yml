@@ -11,6 +11,7 @@ script:
 
 deploy:
  provider: azure_web_apps
+ verbose: true
  username: $React_User
  password: $React_password
  site: docker-react609162
