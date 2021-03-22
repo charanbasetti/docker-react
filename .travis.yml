@@ -11,8 +11,8 @@ script:
 
 deploy:
  provider: azure_web_apps
- username: $React_User
- password: $React_password
+ username: cbas609
+ password: Test609162
  site: testreact609162
  verbose: true
  on:
