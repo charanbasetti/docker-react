@@ -14,5 +14,6 @@ deploy:
  username: $React_User
  password: $React_password
  site: docker-react609162
+ edge: true
  on:
   branch: main
