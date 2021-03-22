@@ -13,7 +13,7 @@ deploy:
  provider: azure_web_apps
  username: $React_User
  password: $React_password
- site: docker-react609162
+ site: testreact609162
  verbose: true
  on:
   branch: main
