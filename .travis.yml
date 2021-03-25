@@ -1,0 +1,19 @@
+sudo: required
+services:
+ - docker
+
+before_install:
+ - docker build -t charanbasetti/docker-react -f Dockerfile.dev .
+
+
+script:
+ - docker run -e CI=true charanbasetti/docker-react npm run test
+
+deploy:
+ provider: azure_web_apps
+ username: cbas609
+ password: Test609162
+ site: testreact609162
+ verbose: true
+ on:
+  branch: main
